@@ -1,36 +1,36 @@
 ## a
-scoreboard players operation #temp math = in math
-scoreboard players operation #temp1 math = in1 math
-execute if score #temp math matches ..-1 run scoreboard players operation #temp math *= #-1 constant
-execute if score #temp1 math matches ..-1 run scoreboard players operation #temp1 math *= #-1 constant
-scoreboard players operation #temp2 math = #temp math
-scoreboard players operation #temp2 math < #temp1 math
-scoreboard players operation #temp3 math = #temp math
-scoreboard players operation #temp3 math > #temp1 math
-scoreboard players operation #temp2 math *= #1000 constant
-scoreboard players operation #temp2 math /= #temp3 math
+scoreboard players operation #temp dirkeyTemp = in dirkeyTemp
+scoreboard players operation #temp1 dirkeyTemp = in1 dirkeyTemp
+execute if score #temp dirkeyTemp matches ..-1 run scoreboard players operation #temp dirkeyTemp *= #-1 dirkeyPrime
+execute if score #temp1 dirkeyTemp matches ..-1 run scoreboard players operation #temp1 dirkeyTemp *= #-1 dirkeyPrime
+scoreboard players operation #temp2 dirkeyTemp = #temp dirkeyTemp
+scoreboard players operation #temp2 dirkeyTemp < #temp1 dirkeyTemp
+scoreboard players operation #temp3 dirkeyTemp = #temp dirkeyTemp
+scoreboard players operation #temp3 dirkeyTemp > #temp1 dirkeyTemp
+scoreboard players operation #temp2 dirkeyTemp *= #1000 dirkeyPrime
+scoreboard players operation #temp2 dirkeyTemp /= #temp3 dirkeyTemp
 ## s
-scoreboard players operation #temp3 math = #temp2 math
-scoreboard players operation #temp3 math *= #temp3 math
-scoreboard players operation #temp3 math /= #1000 constant
+scoreboard players operation #temp3 dirkeyTemp = #temp2 dirkeyTemp
+scoreboard players operation #temp3 dirkeyTemp *= #temp3 dirkeyTemp
+scoreboard players operation #temp3 dirkeyTemp /= #1000 dirkeyPrime
 ## r
-scoreboard players operation out math = #temp3 math
-scoreboard players operation out math *= #-46496 constant
-scoreboard players operation out math /= #100000 constant
-scoreboard players add out math 1593
-scoreboard players operation out math *= #temp3 math
-scoreboard players operation out math /= #1000 constant
-scoreboard players remove out math 3276
-scoreboard players operation out math *= #temp3 math
-scoreboard players operation out math /= #1000 constant
-scoreboard players operation out math *= #temp2 math
-scoreboard players operation out math /= #10000 constant
-scoreboard players operation out math += #temp2 math
-execute if score #temp1 math > #temp math run scoreboard players remove out math 1570
-execute if score #temp1 math > #temp math run scoreboard players operation out math *= #-1 constant
-execute if score in math matches ..-1 run scoreboard players remove out math 3141
-execute if score in math matches ..-1 run scoreboard players operation out math *= #-1 constant
-execute if score in1 math matches ..-1 run scoreboard players operation out math *= #-1 constant
+scoreboard players operation out dirkeyTemp = #temp3 dirkeyTemp
+scoreboard players operation out dirkeyTemp *= #-46496 dirkeyPrime
+scoreboard players operation out dirkeyTemp /= #100000 dirkeyPrime
+scoreboard players add out dirkeyTemp 1593
+scoreboard players operation out dirkeyTemp *= #temp3 dirkeyTemp
+scoreboard players operation out dirkeyTemp /= #1000 dirkeyPrime
+scoreboard players remove out dirkeyTemp 3276
+scoreboard players operation out dirkeyTemp *= #temp3 dirkeyTemp
+scoreboard players operation out dirkeyTemp /= #1000 dirkeyPrime
+scoreboard players operation out dirkeyTemp *= #temp2 dirkeyTemp
+scoreboard players operation out dirkeyTemp /= #10000 dirkeyPrime
+scoreboard players operation out dirkeyTemp += #temp2 dirkeyTemp
+execute if score #temp1 dirkeyTemp > #temp dirkeyTemp run scoreboard players remove out dirkeyTemp 1570
+execute if score #temp1 dirkeyTemp > #temp dirkeyTemp run scoreboard players operation out dirkeyTemp *= #-1 dirkeyPrime
+execute if score in dirkeyTemp matches ..-1 run scoreboard players remove out dirkeyTemp 3141
+execute if score in dirkeyTemp matches ..-1 run scoreboard players operation out dirkeyTemp *= #-1 dirkeyPrime
+execute if score in1 dirkeyTemp matches ..-1 run scoreboard players operation out dirkeyTemp *= #-1 dirkeyPrime
 ## rad 2 deg
-scoreboard players operation out math *= #57295 constant
-scoreboard players operation out math /= #1000000 constant
+scoreboard players operation out dirkeyTemp *= #57295 dirkeyPrime
+scoreboard players operation out dirkeyTemp /= #1000000 dirkeyPrime
