@@ -1,4 +1,4 @@
-scoreboard objectives add dirkeyey dummy
+scoreboard objectives add dirkey dummy
 scoreboard objectives add dirkey.x dummy
 scoreboard objectives add dirkey.z dummy
 scoreboard objectives add dirkeyTemp dummy
