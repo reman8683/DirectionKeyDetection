@@ -1,0 +1,14 @@
+execute if predicate dirkey:is_mounted run function dirkey:mounted
+title @a times 0 10 0
+title @a title ""
+data remove storage test temp
+#append사용해도 됨
+execute if score _w dirkey matches 1 run data modify storage test temp merge value '{"text":"↑","color":"yellow"}'
+execute if score _s dirkey matches 1 run data modify storage test temp merge value '{"text":"↓","color":"yellow"}'
+execute if score _a dirkey matches 1 run data modify storage test temp merge value '{"text":"←","color":"yellow"}'
+execute if score _d dirkey matches 1 run data modify storage test temp merge value '{"text":"→","color":"yellow"}'
+execute if score _w dirkey matches 1 if score _a dirkey matches 1 run data modify storage test temp merge value '{"text":"↖","color":"yellow"}'
+execute if score _a dirkey matches 1 if score _s dirkey matches 1 run data modify storage test temp merge value '{"text":"↙","color":"yellow"}'
+execute if score _s dirkey matches 1 if score _d dirkey matches 1 run data modify storage test temp merge value '{"text":"↘","color":"yellow"}'
+execute if score _d dirkey matches 1 if score _w dirkey matches 1 run data modify storage test temp merge value '{"text":"↗","color":"yellow"}'
+title @a subtitle [{"nbt":"temp[]","storage":"test","interpret":true,"separator":{"text":""}}]

@@ -1,1 +1,1 @@
-execute as @a run function dirkey:test/print_subtitle_mounted
+execute as @a run function dirkey:test/print
